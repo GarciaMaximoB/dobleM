@@ -1,12 +1,23 @@
+import React from 'react'
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import './App.css'
 
-function App() {
-  
+import Home from './pages/Home';
+import Servicios from './pages/Services';
+import Lideres from './pages/Lideres';
+import Contacto from './pages/Contact';
 
+function App() {
   return (
-    <>
-      <h1>Hola Mundo!</h1>
-    </>
+    <Router>
+      <Routes>
+      <Route exact path='/' Component={Home} />
+        <Route path='/home' Component={Home} />
+        <Route path='/servicios' Component={Servicios} />
+        <Route path='/lideres' Component={Lideres} />
+        <Route path='/contacto' Component={Contacto} />
+      </Routes>
+    </Router>
   )
 }
 
