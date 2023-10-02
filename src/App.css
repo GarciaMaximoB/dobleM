@@ -1,0 +1,51 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Josefin Sans', sans-serif;
+    color: white;
+}
+
+body {
+    background-image: url(./assets/background-image.jpg);
+    background-size: cover;
+    /* La imagen se ajustará al tamaño de la ventana */
+    background-repeat: no-repeat;
+    /* Evita la repetición de la imagen */
+    background-attachment: fixed;
+}
+
+.navBar {
+    padding: 30px 5%;
+}
+
+.nav-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-item {
+    margin-right: 10px;
+    
+    
+}
+
+.nav-item:last-child {
+    margin-right: 0;
+}
+
+.nav-item a {
+    text-decoration: none;
+    color: #fff;
+    padding-bottom: 9px;
+    font-size: 22px;
+    font-weight: 300;
+    transition: 0.25s all ease;
+    border-bottom: 2px solid transparent;
+}
+
+.nav-item a:hover {
+    border-bottom: 2px solid white;
+}
