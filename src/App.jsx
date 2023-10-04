@@ -4,6 +4,7 @@ import { I18nextProvider } from 'react-i18next';
 import i18n from 'i18next';
 import './App.css'
 import NavBar from './components/NavBar';
+import Footer from './components/Footer';
 
 import Home from './pages/Home';
 import Servicios from './pages/Services';
@@ -43,6 +44,7 @@ function App() {
           <Route path='/lideres' Component={Lideres} />
           <Route path='/contacto' Component={Contacto} />
         </Routes>
+        <Footer/>
       </div>
     </Router>
     </I18nextProvider>

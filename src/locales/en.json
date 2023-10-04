@@ -1,10 +1,14 @@
 {
-    "agencia-title":"Our agency",
+    "agencia-title":"OUR AGENCY",
     "nav-agencia":"Agency",
     "nav-cultura":"Culture",
     "nav-servicios":"Services",
     "nav-clientes":"Clients",
     "nav-lideres":"Leaders",
-    "nav-contacto":"Contact"
-
+    "nav-contacto":"Contact",
+    "agencia-text":"At Doble M Agency, we understand that the key to success in the digital world lies in strategy, creativity, and genuine connection with your audience. We are a marketing agency committed to providing comprehensive solutions that boost your online presence and help you stand out in an increasingly competitive market.",
+    "cultura-title":"OUR CULTURE",
+    "cultura-t1":"In our agency, our culture is built on passion and commitment to your success. We are here to help you achieve your goals and exceed your expectations. We have a highly skilled and passionate team working closely with you to develop customized strategies that propel you towards success.",
+    "cultura-t2":"We understand that every business is unique, and there is no one-size-fits-all approach. That's why we work hand in hand with you to understand your specific needs. Our culture promotes close collaboration and constant communication. Together, we develop personalized strategies that align with your objectives and drive you towards success."
 }
+
