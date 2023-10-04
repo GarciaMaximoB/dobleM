@@ -11,7 +11,7 @@ function Home() {
 
     return (
         <>
-            <div className='main-section'>
+            <div className='main-section' >
                 <div className='logo-container'>
                     <img src={logo} alt="Logo Doble M Agency" />
                     <LanguageSwitcher/>

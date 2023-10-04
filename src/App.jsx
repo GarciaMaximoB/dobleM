@@ -29,24 +29,22 @@ i18n.init({
   },
 });
 
-
-
 function App() {
   return (
     <I18nextProvider i18n={i18n}>
-    <Router>
-      <div>
-        <NavBar />
-        <Routes>
-          <Route exact path='/' Component={Home} />
-          <Route path='/home' Component={Home} />
-          <Route path='/servicios' Component={Servicios} />
-          <Route path='/lideres' Component={Lideres} />
-          <Route path='/contacto' Component={Contacto} />
-        </Routes>
-        <Footer/>
-      </div>
-    </Router>
+      <Router>
+        <div >
+          <NavBar />
+          <Routes>
+            <Route exact path='/' Component={Home} />
+            <Route path='/home' Component={Home} />
+            <Route path='/servicios' Component={Servicios} />
+            <Route path='/lideres' Component={Lideres} />
+            <Route path='/contacto' Component={Contacto} />
+          </Routes>
+          <Footer />
+        </div>
+      </Router>
     </I18nextProvider>
   )
 }
