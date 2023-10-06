@@ -191,8 +191,8 @@ body {
 
 /*SERVICIOS PAGE*/
 .servicios-section{
-    margin-top: 100px;
-    margin-bottom:150px ;
+    margin-top: 150px;
+    margin-bottom:250px ;
     padding: 50px 0;
 
     display: flex;
@@ -256,6 +256,60 @@ body {
     align-self: center;
     border-radius: 3px;
 }
+
+
+.clientes-section{
+    margin-bottom: 150px;
+    margin-top: 100px;
+}
+
+.clientes-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+}
+
+.clientes-container h1{
+    align-self: self-start;
+    margin-left: 12%;
+}
+.carousel {
+    overflow-x: hidden;
+    width: 75%;
+    
+}
+
+.slider {
+    display: flex;
+    flex-direction: column; /* Cambiar la dirección a columna para crear filas */
+    height: auto; /* Altura del slider */
+    cursor: grab;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.item {
+    flex: 0 0 calc(25% ); /* Ajusta el ancho de los elementos */
+}
+
+.item img {
+    width: 65%;
+    max-width: 100%;
+    height: auto;
+    pointer-events: none;
+}
+
+
+
+
+
+
 
 
 
