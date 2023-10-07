@@ -82,7 +82,7 @@ function Services() {
             <div className='clientes-section'>
                 <div className='clientes-container'>
 
-                    <h1 className='heading-sections'>NUESTROS CLIENTES</h1>
+                    <h1 className='heading-sections'>{t('clientes-title')}</h1>
 
                     <motion.div className='carousel'>
                         <motion.div className='slider' drag='x' dragConstraints={dragConstraints}>
