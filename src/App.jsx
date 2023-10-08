@@ -40,7 +40,7 @@ function App() {
             <Route path='/home' Component={Home} />
             <Route path='/servicios' Component={Servicios} />
             <Route path='/lideres' Component={Lideres} />
-            <Route path='/contacto' Component={Contacto} />
+            <Route path='/contact' Component={Contacto} />
           </Routes>
           <Footer />
         </div>
