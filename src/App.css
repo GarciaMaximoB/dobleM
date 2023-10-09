@@ -561,7 +561,8 @@ body {
     font-size: 20px;
 }
 
-.not-found-container button{
+.not-found-container a{
+    text-decoration: none;
     font-weight: 400;
     border: none;
     color: white;
@@ -931,6 +932,31 @@ body {
     .text-footer a {
         font-weight: 400;
         text-decoration: underline;
+        cursor: pointer;
+    }
+
+    /*NOT FOUND PAGE*/
+
+    .not-found-container h1{
+        font-size: 36px;
+        margin-bottom: 10px;
+    }
+    
+    .not-found-container p{
+        text-align: center;
+        font-size: 18px;
+    }
+    
+    .not-found-container a{
+        text-decoration: none;
+        font-weight: 400;
+        border: none;
+        color: white;
+        background-color: #333;
+        padding: 11px 17px;
+        border-radius: 3px;
+        margin-top: 25px;
+        font-size: 16px;
         cursor: pointer;
     }
 }
