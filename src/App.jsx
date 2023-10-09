@@ -5,11 +5,11 @@ import i18n from 'i18next';
 import './App.css'
 import NavBar from './components/NavBar';
 import Footer from './components/Footer';
-
 import Home from './pages/Home';
 import Servicios from './pages/Services';
 import Lideres from './pages/Lideres';
 import Contacto from './pages/Contact';
+import NotFound from './pages/NotFound';
 import translationsEN from './locales/en.json';
 import translationsES from './locales/es.json';
 
@@ -41,6 +41,7 @@ function App() {
             <Route path='/servicios' Component={Servicios} />
             <Route path='/lideres' Component={Lideres} />
             <Route path='/contact' Component={Contacto} />
+            <Route path='*' Component={NotFound} />
           </Routes>
           <Footer />
         </div>
