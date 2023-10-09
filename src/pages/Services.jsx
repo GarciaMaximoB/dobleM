@@ -79,7 +79,7 @@ function Services() {
                 </div>
             </div>
 
-            <div className='clientes-section'>
+            <div className='clientes-section' id='clients'>
                 <div className='clientes-container'>
 
                     <h1 className='heading-sections'>{t('clientes-title')}</h1>
