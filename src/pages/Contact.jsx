@@ -7,7 +7,7 @@ import phoneIcon from '../assets/phone-icon.svg'
 function Contact() {
     const { t } = useTranslation()
     return (
-        <>
+        <div className='content'>
             <div className='section-contact'>
                 <div className='contact-container'>
                     <div className='column1-contact'>
@@ -36,7 +36,7 @@ function Contact() {
                     </div>
                 </div>
             </div>
-        </>
+        </div>
     )
 }
 

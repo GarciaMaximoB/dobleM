@@ -10,22 +10,22 @@ function Services() {
     const [windowWidth, setWindowWidth] = useState(window.innerWidth);
 
     useEffect(() => {
-      // Función para actualizar el estado del ancho de la ventana
-      function handleResize() {
-        setWindowWidth(window.innerWidth);
-      }
-      // Agregar un event listener para escuchar cambios en el tamaño de la ventana
-      window.addEventListener('resize', handleResize);
-      // Limpieza del event listener al desmontar el componente
-      return () => {
-        window.removeEventListener('resize', handleResize);
-      };
+        // Función para actualizar el estado del ancho de la ventana
+        function handleResize() {
+            setWindowWidth(window.innerWidth);
+        }
+        // Agregar un event listener para escuchar cambios en el tamaño de la ventana
+        window.addEventListener('resize', handleResize);
+        // Limpieza del event listener al desmontar el componente
+        return () => {
+            window.removeEventListener('resize', handleResize);
+        };
     }, []);
 
     const dragConstraints = {
         right: 0,
-        left: -windowWidth-200,
-      };
+        left: -windowWidth -200,
+    };
 
     const { t } = useTranslation();
     const defaultService = { nombre: 'Relaciones Publicas', descripcion: 'Desarrollamos estrategias de relaciones públicas efectivas para mejorar tu reputación y conectar con tu público objetivo.' }
@@ -50,7 +50,7 @@ function Services() {
     };
 
     return (
-        <>
+        <div className='content'>
             <div className='servicios-section'>
                 <div className='servicios-container'>
                     <h1 className='heading-sections services-title'>{t('servicios-title')}</h1>
@@ -109,15 +109,9 @@ function Services() {
                             </div>
                         </motion.div>
                     </motion.div>
-
-
-
-
-
                 </div>
             </div>
-
-        </>
+        </div>
 
 
 

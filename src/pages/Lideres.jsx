@@ -7,8 +7,8 @@ function Lideres() {
     const { t } = useTranslation();
 
     return (
-        <>
-            <div className='lideres-section'>
+        <div className='content'>
+            <div className='lideres-section'  id="leaders">
                 <div className='lideres-container'>
                     <h1 className='heading-sections'>
                         {t('welcome-title')}
@@ -42,7 +42,7 @@ function Lideres() {
                     </div>
                 </div>
             </div>
-        </>
+        </div>
     )
 }
 export default Lideres;
