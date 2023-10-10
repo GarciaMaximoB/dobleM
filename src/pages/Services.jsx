@@ -8,14 +8,14 @@ import i18n from 'i18next';
 
 function Services() {
 
-    const language = localStorage.getItem('language');
+
     useEffect(() => {
         const savedLanguage = localStorage.getItem('language');
         if (savedLanguage) {
             i18n.changeLanguage(language);
             console.log(savedLanguage)
         }
-    }, [language]);
+    }, []);
 
     const [windowWidth, setWindowWidth] = useState(window.innerWidth);
 
@@ -38,7 +38,7 @@ function Services() {
     };
 
    
-    const { t } = useTranslation();
+   
     const defaultService = {
         nombre: language === 'es' || null
             ? 'Relaciones Publicas'
@@ -67,7 +67,7 @@ function Services() {
         setServicioSeleccionado(service[index]);
         console.log(service[index])
     };
-
+    const { t } = useTranslation();
     return (
         <div className='content'>
             <div className='servicios-section'>
