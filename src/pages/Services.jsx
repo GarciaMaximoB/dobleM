@@ -9,6 +9,7 @@ import i18n from 'i18next';
 function Services() {
 
     const idioma = localStorage.getItem('language');
+    const { t } = useTranslation();
 
     useEffect(() => {
         const savedLanguage = localStorage.getItem('language');
@@ -38,8 +39,6 @@ function Services() {
         left: -windowWidth - 200,
     };
 
-   
-   
     const defaultService = {
         nombre: idioma === 'es' || null
             ? 'Relaciones Publicas'
@@ -68,7 +67,7 @@ function Services() {
         setServicioSeleccionado(service[index]);
         console.log(service[index])
     };
-    const { t } = useTranslation();
+    
     return (
         <div className='content'>
             <div className='servicios-section'>
