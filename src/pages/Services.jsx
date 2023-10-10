@@ -12,7 +12,7 @@ function Services() {
     useEffect(() => {
         const savedLanguage = localStorage.getItem('language');
         if (savedLanguage) {
-            i18n.changeLanguage(savedLanguage);
+            i18n.changeLanguage(language);
             console.log(savedLanguage)
         }
     }, [language]);
