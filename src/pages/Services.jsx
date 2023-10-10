@@ -7,13 +7,14 @@ import i18n from 'i18next';
 
 
 function Services() {
+    const language = sessionStorage.getItem('language');
     useEffect(() => {
         const savedLanguage = sessionStorage.getItem('language');
         if (savedLanguage) {
             i18n.changeLanguage(savedLanguage);
             console.log(savedLanguage)
         }
-    }, []);
+    }, [language]);
 
     const [windowWidth, setWindowWidth] = useState(window.innerWidth);
 
@@ -28,7 +29,7 @@ function Services() {
         return () => {
             window.removeEventListener('resize', handleResize);
         };
-    }, [savedLanguage]);
+    }, []);
 
     const dragConstraints = {
         right: 0,

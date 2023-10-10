@@ -6,13 +6,13 @@ import phoneIcon from '../assets/phone-icon.svg'
 import i18n from 'i18next';
 
 function Contact() {
+    const language = sessionStorage.getItem('language');
     useEffect(() => {
-        // Recupera el idioma almacenado en el localStorage
         const savedLanguage = sessionStorage.getItem('language');
         if (savedLanguage) {
             i18n.changeLanguage(savedLanguage);
         }
-    }, [savedLanguage]);
+    }, [language]);
     const { t } = useTranslation()
     return (
         <div className='content'>
