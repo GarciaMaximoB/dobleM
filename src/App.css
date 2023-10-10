@@ -53,7 +53,7 @@ body {
 
 .navBar {
     padding: 30px 5%;
-    animation: navBarAnimation 2s ease-in;
+    animation: navBarAnimation 1s ease-in;
 }
 
 .navbar-show {

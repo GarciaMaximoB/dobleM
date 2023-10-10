@@ -3,9 +3,17 @@ import { useTranslation } from 'react-i18next';
 import images from '../assets/data'
 import { motion } from 'framer-motion';
 import { useEffect, useState } from 'react';
+import i18n from 'i18next';
 
 
 function Services() {
+    useEffect(() => {
+        // Recupera el idioma almacenado en el localStorage
+        const savedLanguage = localStorage.getItem('language');
+        if (savedLanguage) {
+            i18n.changeLanguage(savedLanguage);
+        }
+    }, []);
 
     const [windowWidth, setWindowWidth] = useState(window.innerWidth);
 
@@ -24,11 +32,20 @@ function Services() {
 
     const dragConstraints = {
         right: 0,
-        left: -windowWidth -200,
+        left: -windowWidth - 200,
     };
 
+    const lenguaje = localStorage.getItem('language')
     const { t } = useTranslation();
-    const defaultService = { nombre: 'Relaciones Publicas', descripcion: 'Desarrollamos estrategias de relaciones públicas efectivas para mejorar tu reputación y conectar con tu público objetivo.' }
+    const defaultService = {
+        nombre: lenguaje === 'es' || null
+            ? 'Relaciones Publicas'
+            : 'Public relations',
+        descripcion: lenguaje === 'es'
+            ? 'Desarrollamos estrategias de relaciones públicas efectivas para mejorar tu reputación y conectar con tu público objetivo.'
+            : 'We develop effective public relations strategies to improve your reputation and connect with your target audience.'
+    }
+
     const services1 = [
         { nombre: t('s-re-pub'), descripcion: t('s-desc-re') },
         { nombre: t('s-co-man'), descripcion: t('s-desc-co') },

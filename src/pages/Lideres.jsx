@@ -1,9 +1,17 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import { useTranslation } from 'react-i18next';
 import imagenTrago from '../assets/trago.jpg'
 import { Link } from 'react-router-dom';
+import  i18n  from 'i18next';
 
 function Lideres() {
+    useEffect(() => {
+        // Recupera el idioma almacenado en el localStorage
+        const savedLanguage = localStorage.getItem('language');
+        if (savedLanguage) {
+            i18n.changeLanguage(savedLanguage);
+        }
+    }, []);
     const { t } = useTranslation();
 
     return (
