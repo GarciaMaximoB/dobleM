@@ -3,11 +3,11 @@ import { useTranslation } from "react-i18next";
 import  i18n from "i18next";
 
 function NotFound() {
-    const language = sessionStorage.getItem('language');
+    const language = localStorage.getItem('language');
 
     useEffect(() => {
         // Recupera el idioma almacenado en el localStorage
-        const savedLanguage = sessionStorage.getItem('language');
+        const savedLanguage = localStorage.getItem('language');
         if (savedLanguage) {
             i18n.changeLanguage(savedLanguage);
         }

@@ -7,9 +7,10 @@ import i18n from 'i18next';
 
 
 function Services() {
-    const language = sessionStorage.getItem('language');
+
+    const language = localStorage.getItem('language');
     useEffect(() => {
-        const savedLanguage = sessionStorage.getItem('language');
+        const savedLanguage = localStorage.getItem('language');
         if (savedLanguage) {
             i18n.changeLanguage(savedLanguage);
             console.log(savedLanguage)
@@ -36,13 +37,13 @@ function Services() {
         left: -windowWidth - 200,
     };
 
-    const lenguaje = sessionStorage.getItem('language')
+   
     const { t } = useTranslation();
     const defaultService = {
-        nombre: lenguaje === 'es' || null
+        nombre: language === 'es' || null
             ? 'Relaciones Publicas'
             : 'Public relations',
-        descripcion: lenguaje === 'es'
+        descripcion: language === 'es'
             ? 'Desarrollamos estrategias de relaciones públicas efectivas para mejorar tu reputación y conectar con tu público objetivo.'
             : 'We develop effective public relations strategies to improve your reputation and connect with your target audience.'
     }

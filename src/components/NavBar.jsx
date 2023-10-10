@@ -7,25 +7,25 @@ import bars from "../assets/bars-solid.svg"
 function NavBar() {
 
 
-    const toggleNavBar = ()=>{
+    const toggleNavBar = () => {
         const navList = document.getElementById('nav-list');
         const content = document.querySelector('.content');
         const footer = document.querySelector('.footer')
-        navList.classList.toggle('active');     
-        content.classList.toggle('active');  
-        footer.classList.toggle('active');   
+        navList.classList.toggle('active');
+        content.classList.toggle('active');
+        footer.classList.toggle('active');
     }
 
-   const removeNav = ()=>{
-    const navList = document.getElementById('nav-list');
-    const content = document.querySelector('.content');
-    const footer = document.querySelector('.footer')
-    navList.classList.remove('active');     
-    content.classList.remove('active');  
-    footer.classList.remove('active');   
+    const removeNav = () => {
+        const navList = document.getElementById('nav-list');
+        const content = document.querySelector('.content');
+        const footer = document.querySelector('.footer')
+        navList.classList.remove('active');
+        content.classList.remove('active');
+        footer.classList.remove('active');
     }
 
-   
+
 
     const { t } = useTranslation();
     return (
@@ -50,7 +50,7 @@ function NavBar() {
                     <a href="/contact" onClick={removeNav}>{t('nav-contacto')}</a>
                 </li>
             </ul>
-           <img src={bars} alt="" id="navbarMenuIcon" onClick={toggleNavBar}/>
+            <img src={bars} alt="" id="navbarMenuIcon" onClick={toggleNavBar} />
         </nav>
     )
 }
