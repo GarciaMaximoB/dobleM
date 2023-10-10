@@ -3,17 +3,16 @@ import { useTranslation } from "react-i18next";
 import  i18n from "i18next";
 
 function NotFound() {
-    const idioma = localStorage.getItem('language');
+    const { t } = useTranslation();
 
     useEffect(() => {
-        // Recupera el idioma almacenado en el localStorage
         const savedLanguage = localStorage.getItem('language');
         if (savedLanguage) {
             i18n.changeLanguage(savedLanguage);
+            console.log(savedLanguage)
         }
-    }, [idioma]);
+    }, []);
 
-    const { t } = useTranslation()
     return (
         <div className="content">
             <div className="not-found-container">

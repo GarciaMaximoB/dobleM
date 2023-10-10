@@ -1,4 +1,4 @@
-import React, {useEffect} from 'react';
+import React, { useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 import igIcon from '../assets/ig-icon.svg'
 import mailIcon from '../assets/mail-icon.svg'
@@ -7,15 +7,15 @@ import i18n from 'i18next';
 
 function Contact() {
 
-    const language = localStorage.getItem('language');
+    const { t } = useTranslation();
+
     useEffect(() => {
         const savedLanguage = localStorage.getItem('language');
         if (savedLanguage) {
             i18n.changeLanguage(savedLanguage);
+            console.log(savedLanguage)
         }
-    }, [language]);
-
-    const { t } = useTranslation()
+    }, []);
     return (
         <div className='content'>
             <div className='section-contact'>
