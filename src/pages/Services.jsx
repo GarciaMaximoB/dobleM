@@ -8,6 +8,7 @@ import i18n from 'i18next';
 
 function Services() {
 
+    const idioma = localStorage.getItem('language');
 
     useEffect(() => {
         const savedLanguage = localStorage.getItem('language');
@@ -40,10 +41,10 @@ function Services() {
    
    
     const defaultService = {
-        nombre: language === 'es' || null
+        nombre: idioma === 'es' || null
             ? 'Relaciones Publicas'
             : 'Public relations',
-        descripcion: language === 'es'
+        descripcion: idioma === 'es'
             ? 'Desarrollamos estrategias de relaciones públicas efectivas para mejorar tu reputación y conectar con tu público objetivo.'
             : 'We develop effective public relations strategies to improve your reputation and connect with your target audience.'
     }
