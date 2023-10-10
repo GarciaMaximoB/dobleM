@@ -12,7 +12,7 @@ function Lideres() {
         if (savedLanguage) {
             i18n.changeLanguage(savedLanguage);
         }
-    }, []);
+    },[]);
 
     const { t } = useTranslation();
 

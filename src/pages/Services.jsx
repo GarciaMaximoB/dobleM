@@ -8,10 +8,10 @@ import i18n from 'i18next';
 
 function Services() {
     useEffect(() => {
-        // Recupera el idioma almacenado en el localStorage
         const savedLanguage = localStorage.getItem('language');
         if (savedLanguage) {
             i18n.changeLanguage(savedLanguage);
+            console.log(savedLanguage)
         }
     }, []);
 
