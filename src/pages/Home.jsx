@@ -9,7 +9,7 @@ import i18n from 'i18next';
 function Home() {
     useEffect(() => {
         // Recupera el idioma almacenado en el localStorage
-        const savedLanguage = localStorage.getItem('language');
+        const savedLanguage = sessionStorage.getItem('language');
         if (savedLanguage) {
             i18n.changeLanguage(savedLanguage);
         }

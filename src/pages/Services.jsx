@@ -8,7 +8,7 @@ import i18n from 'i18next';
 
 function Services() {
     useEffect(() => {
-        const savedLanguage = localStorage.getItem('language');
+        const savedLanguage = sessionStorage.getItem('language');
         if (savedLanguage) {
             i18n.changeLanguage(savedLanguage);
             console.log(savedLanguage)
@@ -35,7 +35,7 @@ function Services() {
         left: -windowWidth - 200,
     };
 
-    const lenguaje = localStorage.getItem('language')
+    const lenguaje = sessionStorage.getItem('language')
     const { t } = useTranslation();
     const defaultService = {
         nombre: lenguaje === 'es' || null

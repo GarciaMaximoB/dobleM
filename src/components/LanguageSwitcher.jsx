@@ -7,7 +7,7 @@ function LanguageSwitcher() {
     const changeLanguage = (language) => {
       i18n.changeLanguage(language);
       setIdioma(language)  
-      localStorage.setItem('language', language);
+      sessionStorage.setItem('language', language);
     };
 
     const lenguaje = localStorage.getItem('language')
