@@ -2,8 +2,10 @@ import React, { useState } from "react";
 import i18n from 'i18next';
 
 function LanguageSwitcher() {
-
     const [idioma, setIdioma] = useState('es')
+
+    const idiomaGuardado = localStorage.getItem('language')
+
     const changeLanguage = (language) => {
       i18n.changeLanguage(language);
       setIdioma(language)  
@@ -12,9 +14,9 @@ function LanguageSwitcher() {
 
     return (
       <div>
-        <button onClick={() => changeLanguage('es')} className={`button-language ${idioma == 'es' || null ? 'activo' : ''}`}>ES</button>
+        <button onClick={() => changeLanguage('es')} className={`button-language ${idiomaGuardado == 'es' || null ? 'activo' : ''}`}>ES</button>
         <span> / </span>
-        <button onClick={() => changeLanguage('en')} className={`button-language ${idioma == 'en' ? 'activo' : ''}`}>EN</button>
+        <button onClick={() => changeLanguage('en')} className={`button-language ${idiomaGuardado == 'en' ? 'activo' : ''}`}>EN</button>
       </div>
     );
   }
