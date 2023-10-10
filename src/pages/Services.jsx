@@ -28,7 +28,7 @@ function Services() {
         return () => {
             window.removeEventListener('resize', handleResize);
         };
-    }, []);
+    }, [savedLanguage]);
 
     const dragConstraints = {
         right: 0,

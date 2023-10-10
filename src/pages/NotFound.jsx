@@ -10,7 +10,7 @@ function NotFound() {
         if (savedLanguage) {
             i18n.changeLanguage(savedLanguage);
         }
-    }, []);
+    }, [savedLanguage]);
 
     const { t } = useTranslation()
     return (

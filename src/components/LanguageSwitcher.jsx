@@ -10,7 +10,7 @@ function LanguageSwitcher() {
       sessionStorage.setItem('language', language);
     };
 
-    const lenguaje = localStorage.getItem('language')
+    const lenguaje = sessionStorage.getItem('language')
 
     
   
