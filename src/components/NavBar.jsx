@@ -32,10 +32,10 @@ function NavBar() {
         <nav className="navBar">
             <ul className="nav-list" id="nav-list">
                 <li className="nav-item">
-                    <a href="/home/#agency" onClick={removeNav}>{t('nav-agencia')}</a>
+                    <a href="/#agency" onClick={removeNav}>{t('nav-agencia')}</a>
                 </li>
                 <li className="nav-item">
-                    <a href="/home/#culture" onClick={removeNav}>{t('nav-cultura')}</a>
+                    <a href="/#culture" onClick={removeNav}>{t('nav-cultura')}</a>
                 </li>
                 <li className="nav-item">
                     <a href="/servicios/#services" onClick={removeNav}>{t('nav-servicios')}</a>

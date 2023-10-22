@@ -37,7 +37,7 @@ function App() {
           <NavBar />
           <Routes>
             <Route exact path='/' Component={Home} />
-            <Route path='/home' Component={Home} />
+            
             <Route path='/servicios' Component={Servicios} />
             <Route path='/lideres' Component={Lideres} />
             <Route path='/contact' Component={Contacto} />
