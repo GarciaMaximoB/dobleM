@@ -323,6 +323,7 @@ body {
     align-items: center;
     justify-content: center;
     align-self: center;
+
 }
 
 .clientes-container h1 {
@@ -339,7 +340,7 @@ body {
 .carousel {
     overflow-x: hidden;
     width: 75%;
-
+ 
 }
 
 .slider {
@@ -349,6 +350,7 @@ body {
     height: auto;
     /* Altura del slider */
     cursor: grab;
+   
 }
 
 .row {
