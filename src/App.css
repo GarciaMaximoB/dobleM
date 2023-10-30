@@ -11,7 +11,6 @@ body {
 }
 
 html {
-
     scroll-behavior: smooth;
 }
 
@@ -194,28 +193,58 @@ body {
     line-height: 1.4em;
 }
 
-.culture-section {
+.leaders-section {
     display: flex;
     justify-content: center;
     align-items: center;
     margin-bottom: 250px;
 }
 
-.culture-container {
-    max-width: 85%;
+.lideres-foto{
+    height: 650px;
+    margin-right: 60px;
+}
+
+.lideres-button{
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 28px;
+    margin-left: 20px;
+    padding: 9px 10px;
+    width: 40%;
+    background-color: #333;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: 0.25s all ease;
+    margin-top: 40px;
+}
+
+.lideres-button:hover{
+    background-color: #474747;
+}
+
+.leaders-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-.columns {
+.columns{
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.columns span {
+.spans-lideres{
+    display: flex;
+    flex-direction: column;
+    max-width: 40%;
+}
+.spans-lideres span {
     padding: 20px;
     font-size: 24px;
     font-weight: 300;
@@ -458,26 +487,6 @@ body {
     line-height: 1.4em;
 }
 
-.column-1 a {
-    text-align: center;
-    text-decoration: none;
-    font-size: 18px;
-    font-weight: 500;
-    line-height: 28px;
-    margin-left: 30px;
-    padding: 9px 15px;
-    width: 40%;
-    background-color: #333;
-    border: none;
-    border-radius: 3px;
-    cursor: pointer;
-    transition: 0.25s all ease;
-}
-
-.column-1 a:hover {
-    background-color: #474747;
-}
-
 .column-2 img {
     height: 450px;
 }
@@ -624,7 +633,7 @@ body {
         align-items: center;
         position: fixed;
         /* Añadimos esta línea */
-        top: 8.49%;
+        top: 8.6%;
         /* Ajusta este valor según tu necesidad para dejar espacio entre el navbar y los links */
         right: 0;
         /* Añadimos esta línea */
@@ -641,13 +650,13 @@ body {
         animation: fadeIn 1s ease-out
     }
 
-    .nav-list li {
+    .nav-item {
         display: flex;
         justify-content: center;
         align-items: center ;
         margin-left: 0;
         /* Añadimos esta línea para que los enlaces aparezcan uno debajo del otro */
-        padding: 11.5%;
+        padding: 15%;
         width: 100%;
         text-align: center;
         border-bottom: #5e5e5e 1px solid;
@@ -707,9 +716,37 @@ body {
         line-height: 1.4em;
     }
 
-    .culture-container {
-        padding: 10px 0;
-        max-width: 100%;
+    .leaders-section {
+        margin-bottom: 150px;
+ 
+    }
+
+    .spans-lideres{
+        display: flex;
+        flex-direction: column;
+        max-width: 90%;
+    }
+
+    .lideres-foto{
+        height: 550px;
+        margin-right: 0;
+        margin-bottom: 30px;
+    }
+    
+    .lideres-button{
+        align-self: center;
+        font-size: 20px;
+        margin-left: 0px;
+        padding: 9px 10px;
+        width: 90%;
+        margin-top: 40px;
+    }
+    
+    .spans-lideres span {
+        padding: 15px;
+        font-size:20px;
+        font-weight: 300;
+        line-height: 1.4em;
     }
 
     .columns {
@@ -717,11 +754,6 @@ body {
         flex-direction: column;
         align-items: center;
         justify-content: center;
-    }
-
-    .columns span {
-        padding: 20px;
-        font-size: 20px;
     }
 
     /*SERVICES PAGE*/

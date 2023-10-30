@@ -4,7 +4,8 @@ import imagenAgencia from "../assets/CamaraBN.png"
 import LanguageSwitcher from '../components/LanguageSwitcher';
 import { useTranslation } from 'react-i18next';
 import i18n from 'i18next';
-
+import lideresFoto from "../assets/owners_photo.jpg"
+import { Link } from 'react-router-dom';
 
 function Home() {
     const { t } = useTranslation();
@@ -36,16 +37,25 @@ function Home() {
                 </div>
             </div>
 
-            <div className='culture-section' id="culture">
-                <div className='culture-container'>
+            <div className='leaders-section' id="leaders">
+                <div className='leaders-container'>
                     <h1 className='heading-sections'>{t('cultura-title')}</h1>
                     <div className='columns'>
+                        <img src={lideresFoto} alt="Micaela Seggio & Melanie Iglesias" className='lideres-foto'/>
+                        <div className='spans-lideres'>
                         <span>
-                            {t('cultura-t1')}
+                            {t('lideres-t1')}
                         </span>
                         <span>
-                            {t('cultura-t2')}
+                            {t('lideres-t2')}
                         </span>
+                        <span>
+                            {t('lideres-t3')}
+                        </span>
+                        <Link to='/contact' className='lideres-button'>
+                            {t('lideres-btn')}
+                        </Link>
+                        </div>
                     </div>
                 </div>
             </div>

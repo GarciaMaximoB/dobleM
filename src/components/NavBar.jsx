@@ -34,17 +34,14 @@ function NavBar() {
                 <li className="nav-item">
                     <a href="/#agency" onClick={removeNav}>{t('nav-agencia')}</a>
                 </li>
-                <li className="nav-item">
-                    <a href="/#culture" onClick={removeNav}>{t('nav-cultura')}</a>
+                <li className="nav-item" >
+                    <a href="/#leaders" onClick={removeNav}>{t('nav-lideres')}</a>
                 </li>
                 <li className="nav-item">
                     <a href="/servicios/#services" onClick={removeNav}>{t('nav-servicios')}</a>
                 </li>
                 <li className="nav-item">
                     <a href="/servicios/#clients" onClick={removeNav}>{t('nav-clientes')}</a>
-                </li>
-                <li className="nav-item" >
-                    <a href="/lideres/#leaders" onClick={removeNav}>{t('nav-lideres')}</a>
                 </li>
                 <li className="nav-item">
                     <a href="/contact" onClick={removeNav}>{t('nav-contacto')}</a>
