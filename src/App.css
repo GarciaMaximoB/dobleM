@@ -656,7 +656,8 @@ body {
         align-items: center ;
         margin-left: 0;
         /* Añadimos esta línea para que los enlaces aparezcan uno debajo del otro */
-        padding: 15%;
+        
+        height: 25%;
         width: 100%;
         text-align: center;
         border-bottom: #5e5e5e 1px solid;
