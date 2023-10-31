@@ -781,7 +781,7 @@ body {
         justify-content: center;
         width: 100%;
         list-style: none;
-
+        margin-bottom: 20px;
     }
 
     .servicios-link {

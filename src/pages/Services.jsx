@@ -73,7 +73,6 @@ function Services() {
             <div className='servicios-section'>
                 <div className='servicios-container'>
                     <h1 className='heading-sections services-title'>{t('servicios-title')}</h1>
-
                     <ul className="servicios-list">
                         {services1.map((service, index) => (
                             <li key={index}>
