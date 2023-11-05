@@ -22,11 +22,7 @@ function Contact() {
                 <div className='contact-container'>
                     <div className='column1-contact'>
                         <h1 className='heading-sections'>{t('contact-title')}</h1>
-                        <p>{t('contact-paragraph')}</p>
-                        <br />
-                        <p>{t('contact-paragraph2')}</p>
-                        <br />
-                        <b>{t('contact-bold')}</b>
+                        <p>{t('contact-bold')}</p>
                     </div>
                     <div className='column2-contact'>
                         <ul>
