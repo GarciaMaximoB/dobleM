@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import logo from "../assets/logo.png"
-import imagenAgencia from "../assets/CamaraBN.png"
+import imagenAgencia from "../assets/Imagen1.png"
 import LanguageSwitcher from '../components/LanguageSwitcher';
 import { useTranslation } from 'react-i18next';
 import i18n from 'i18next';
@@ -32,7 +32,7 @@ function Home() {
                     <h1 className='heading-sections'>{t('agencia-title')}</h1>
                     <div className='div-block'>
                         <p className='paragraph'>{t('agencia-text')}</p>
-                        <img src={imagenAgencia} alt="Imagen de un celular blanco y negro" />
+                        <img src={imagenAgencia} alt="Mockup Doble M Agency" />
                     </div>
                 </div>
             </div>

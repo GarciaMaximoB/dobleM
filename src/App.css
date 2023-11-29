@@ -176,7 +176,7 @@ body {
 }
 
 .div-block img {
-    width: 350px;
+    width: 400px;
     border-radius: 3px;
 }
 
@@ -700,11 +700,11 @@ body {
 
     .agency-section {
         margin-bottom:150px;
-        padding: 7px;
+        padding: 10px;
     }
 
     .agency-container {
-        padding: 10px 0;
+        padding: 15px 0px;
         max-width: 100%;
     }
 
