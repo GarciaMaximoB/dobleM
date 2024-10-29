@@ -652,7 +652,7 @@ body {
 }
 
 .where-section img {
-  width: 80%;
+  width: 65%;
   mask-image: linear-gradient(black 85%, transparent);
 }
 
@@ -724,7 +724,7 @@ body {
 
   .heading-sections {
     text-align: center;
-    font-size: 30px;
+    font-size: 28px;
     line-height: 1.5em;
     font-weight: 700;
     margin-top: 10px;
@@ -864,7 +864,7 @@ body {
 
   .clientes-container h1 {
     align-self: self-start;
-    margin-left: 5%;
+    padding: 0;
   }
 
   .clientes-container h2 {
