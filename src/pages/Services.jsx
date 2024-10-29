@@ -32,7 +32,8 @@ function Services() {
 
   const dragConstraints = {
     right: 0,
-    left: -windowWidth - 450,
+    // left: -windowWidth - 100,
+    left: windowWidth < 800 ? -windowWidth - 500 : -windowWidth - 200,
   };
 
   const chunkArrayIntoRows = (array, rows) => {
