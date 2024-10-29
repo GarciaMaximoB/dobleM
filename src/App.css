@@ -770,11 +770,14 @@ body {
   .spans-lideres {
     display: flex;
     flex-direction: column;
-    max-width: 90%;
+    width: 90%;
   }
-
+  .images-column{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
   .lideres-foto {
-    height: 550px;
     margin-right: 0;
     margin-bottom: 30px;
   }
