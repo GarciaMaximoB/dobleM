@@ -129,7 +129,7 @@ function Services() {
       </div>
 
       <div className="where-section">
-        <h1>¿DONDE ESTAMOS?</h1>
+        <h1>{t("where-title")}</h1>
         <img src={mapa} alt="" />
       </div>
 
